@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Corridor</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom right, #ff9ac9, #ff6ec7);
+}
+
+/* container to hold image + overlays */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+/* the main image */
+.xx {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/* hotspot buttons */
+
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+  background: transparent; /* fully invisible */
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img class="xx" src="Images/corridor1.png" alt="Corridor">
+
+  <!-- Five hotspots -->
+<a href="gameroom.html">
+  <div id="spot1" class="hotspot" style="top: 85px; left: 90px; width: 230px; height: 800px;"></div>
+</a>
+
+<a href="letter.html">
+  <div id="spot2" class="hotspot" style="top: 230px; left: 390px; width: 130px; height: 550px;"></div>
+</a>
+
+<a href="wordlewall.html">
+  <div id="spot3" class="hotspot" style="top: 300px; left: 585px; width: 160px; height: 430px;"></div>
+</a>
+
+<a href="musicroom.html">
+  <div id="spot4" class="hotspot" style="top: 300px; left: 810px; width: 170px; height: 430px;"></div>
+</a>
+
+<a href="painting.html">
+  <div id="spot5" class="hotspot" style="top: 150px; left: 1210px; width: 230px; height: 750px;"></div>
+</a>
+</div>
+
+</body>
+</html>
